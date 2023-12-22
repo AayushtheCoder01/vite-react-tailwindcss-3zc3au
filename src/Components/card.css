@@ -1,0 +1,25 @@
+.main{
+  width: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.image{
+  margin: 1rem;
+}
+.more-data{
+  background-color: rgba(224, 223, 223, 0.875);
+}
+.place-span{
+  font-size: 12px;
+}
+@media(min-width:600px) {
+  .place-span{
+    font-size: 14px;
+  }
+}
