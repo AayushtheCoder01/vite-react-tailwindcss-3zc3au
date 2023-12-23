@@ -10,10 +10,20 @@ import { IoSearch } from 'react-icons/io5';
 import './card.css';
 import MainCard from '../Components/main-card';
 
+let getLocalData =  () => {
+  let city = localStorage.getItem('myCityName')
+
+  if(city) {
+    return city
+  } else{
+    return "delhi"
+  }
+}
+
 function Card() {
   // // fetching api.
 
-  let [cityName, setCityName] = useState('delhi');
+  let [cityName, setCityName] = useState(getLocalData());
 
   let [weatherData, setWeatherData] = useState({});
 
@@ -66,6 +76,10 @@ function Card() {
   useEffect(() => {
     getInfo();
   }, [cityName]);
+
+  useEffect(() => {
+    localStorage.setItem("myCityName", cityName)
+  }, [cityName])
 
   // getting input value from user.
   let search_input = document.querySelector('.search-input');
