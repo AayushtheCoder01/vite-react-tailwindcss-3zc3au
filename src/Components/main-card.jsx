@@ -42,14 +42,13 @@ function MainCard({ Data }) {
               <h2 className="text-xl sm:text-3xl p-5">{Math.ceil(Data.temp - 273)}℃</h2>
             </div>
 
-            <div className="sky flex justify-center w-1/3 p-1 bg-black">
-              <h2 className="text-xl sm:text-3xl p-5"> {weatherMood} <br/>
-                 <span className="place-span">{name}, {country}</span>
+            <div className="sky flex justify-center items-center w-1/3 p-1 bg-black">
+              <h2 className="text-xl sm:text-3xl p-5"> {weatherMood}
               </h2>
             </div>
 
             <div className="main-time flex justify-center items-center w-1/3 p-1 bg-blue-500">
-              <h2 className="text-xl p-5 sm:text-3xl">IST</h2>
+              <h4 className="text-md p-5 sm:text-2xl">{name}, {country}</h4>
             </div>
           </div>
 

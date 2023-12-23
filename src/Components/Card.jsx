@@ -1,10 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { FaCloud } from 'react-icons/fa6';
-import { IoPartlySunnyOutline } from 'react-icons/io5';
-import { WiSunrise } from 'react-icons/wi';
-import { WiHumidity } from 'react-icons/wi';
-import { IoRainyOutline } from 'react-icons/io5';
-import { WiStrongWind } from 'react-icons/wi';
 import { IoSearch } from 'react-icons/io5';
 
 import './card.css';
