@@ -72,7 +72,7 @@ function MainCard({ Data }) {
 
             <div className="wind flex justify-center w-3/12 p-1">
               <WiStrongWind size="2rem" color="skyblue" />
-              <h2 className="px-2 text-md">{windSpeed*3.6} K/hr <br/> speed</h2>
+              <h2 className="px-2 text-md">{windSpeed} K/hr <br/> speed</h2>
             </div>
           </div>
         </div>

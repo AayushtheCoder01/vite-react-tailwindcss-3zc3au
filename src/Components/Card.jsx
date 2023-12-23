@@ -34,7 +34,12 @@ function Card() {
 
       const name = data.name;
 
-      const windSpeed = data.wind.speed;
+      let wind = data.wind.speed;
+
+      let Speed = wind*3.6
+
+      let windSpeed = Speed.toFixed(2)
+
 
       const { country, sunrise, sunset } = data.sys;
 
