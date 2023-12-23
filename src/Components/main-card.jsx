@@ -6,8 +6,14 @@ import { WiHumidity } from 'react-icons/wi';
 import { IoRainyOutline } from 'react-icons/io5';
 import { WiStrongWind } from 'react-icons/wi';
 import { IoSearch } from 'react-icons/io5';
+import { IoIosSunny } from "react-icons/io";
+import { CiCloud } from "react-icons/ci";
+import { MdFoggy } from "react-icons/md";
+import { WiSmoke } from "react-icons/wi";
+import { RiMistFill } from "react-icons/ri";
 
 function MainCard({ Data }) {
+
   const {temp,
     humidity,
     pressure,
