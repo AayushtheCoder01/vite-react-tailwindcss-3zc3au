@@ -3,6 +3,7 @@ import { IoSearch } from 'react-icons/io5';
 
 import './card.css';
 import MainCard from '../Components/main-card';
+import { RiH1 } from 'react-icons/ri';
 
 let getLocalData =  () => {
   let city = localStorage.getItem('myCityName')
@@ -20,6 +21,8 @@ function Card() {
   let [cityName, setCityName] = useState(getLocalData());
 
   let [weatherData, setWeatherData] = useState({});
+
+  let [loading, setLoading] = useState(true)
 
   // data variables for card.
 
@@ -60,6 +63,7 @@ function Card() {
       };
 
       setWeatherData(myWeatherData);
+      setLoading(false)
 
       console.log(data);
     } catch (error) {
@@ -97,7 +101,7 @@ function Card() {
         </form>
       </div>
 
-      <MainCard Data={weatherData}/>
+      {loading ? <h1 className='text-white text-4xl text-center my-20'>Loading...</h1> : <MainCard Data={weatherData}/> }
     </>
   );
 }
